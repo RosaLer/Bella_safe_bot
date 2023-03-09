@@ -67,9 +67,12 @@ def mensaje_texto(message):
             # devuelve respuesta según predicción
             bot.send_message(message.chat.id, value)
             if pred == 0:
+                # Para dos segundos
                 time.sleep(2)
+                # envía contacto emergencia
                 bot.send_contact(message.chat.id, first_name='Emergencias', phone_number='112')
             elif pred == 2:
+                # envía botones con enlaces y contacto
                 markup = InlineKeyboardMarkup(row_width=3) 
                 b1 = InlineKeyboardButton("Policía: Unidad Atención Mujer", url = "https://www.policia.es/_es/colabora_ufam.php")
                 b2 = InlineKeyboardButton("Delegación Gov. Violencia Genero", url = "https://violenciagenero.igualdad.gob.es")
@@ -101,9 +104,12 @@ def mensaje_voice(message):
         # devuelve respuesta según predicción
         bot.send_message(message.chat.id , value)
         if pred == 0:
+                # Para dos segundos
                 time.sleep(2)
+                # envía contacto emergencia
                 bot.send_contact(message.chat.id, first_name='Emergencias', phone_number='112')
         elif pred == 2:
+                # envía botones con enlaces y contacto
                 markup = InlineKeyboardMarkup(row_width=3) 
                 b1 = InlineKeyboardButton("Policía: Unidad Atención Mujer", url = "https://www.policia.es/_es/colabora_ufam.php")
                 b2 = InlineKeyboardButton("Delegación Gov. Violencia Genero", url = "https://violenciagenero.igualdad.gob.es")
