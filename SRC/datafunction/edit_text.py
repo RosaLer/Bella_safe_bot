@@ -38,7 +38,7 @@ def clean(texto):
     
     return dato
 
-# Función para extraer el texto de las tags y limpiarlo usando la función anteriormente generada:
+# Function to extract the text of the tags and clean it using the previously generated function:
 
 def extraer_limpiar(tags):
     texto = ""
@@ -56,13 +56,13 @@ def sum_relevant_words(df, relevant_words, target):
             
     return df
 
-# generar ngram: 
+# generate ngram: 
 def generate_ngrams(text, n_gram=1):
     token = [token for token in text.lower().split(" ") if token != "" if token not in STOPWORDS]
     ngrams = zip(*[token[i:] for i in range(n_gram)])
     return [" ".join(ngram) for ngram in ngrams]
 
-# barra horizontales:
+# horizontal bar:
 def horizontal_bar_chart(df, color):
     trace = go.Bar(
         y=df["word"].values[::-1],

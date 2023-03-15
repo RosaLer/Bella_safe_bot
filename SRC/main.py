@@ -49,14 +49,14 @@ def ajust(X,y,choos_words):
 
 df_pon, tf_vec = ajust(texto,target,choos_words)
 
-# Definir X,y:
+# X,y:
 
 X = df_pon.iloc[:,:-1]
 y = df_pon["target_2"]
 
 model =  LogisticRegression()
 
-# Aqui definimos el espacio de parámetros a explorar
+# Here we define the parameter to explore them
 parameters = {
     'C': (0.2, 0.5, 0.7),
     'penalty': (None, "l2"),
@@ -79,7 +79,7 @@ pipeline_pon = Pipeline([
     ('model', model_def)
 ])
 
-# Guardar modelo:
+# Save the model:
 
 with open('datafunction/interaction_5.pkl', "wb") as modelo_salida:
     pickle.dump(pipeline_pon, modelo_salida)

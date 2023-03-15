@@ -11,13 +11,13 @@ respuestas = {"Bienvenida":["Hola, soy Bella, tu Bot de ayuda ante situaciones d
 Y recuerda, no estás sola, estoy aquí para ayudarte.""", 
                             2: "Para ayudarte en este momento, te dejo aquí información oficial a la que siempre podrás recurrir:"}
 
-saludos = ['hola', 'hello', 'buenos días', 'buenas tardes', 
+saludos = ['hi','hola', 'hello', 'buenos días', 'buenas tardes', 
            'buenas noches', 'cómo estás','como estas', 'tal', 'qué tal','que tal', 
            'qué hay', 'hey', 'buen día', 'buenas tardes', 'buenas noches']
 
 despedidas = [
     "hasta pronto", "hasta la vista", "adiós", "adios", "nos vemos", "chao", "hasta luego",
     "que tengas un buen día","que te vaya bien","cuídate", "hasta la próxima",
-    "buenas noches", "gracias", "muchas gracias"]
+    "buenas noches", "gracias", "muchas gracias", "chao", "ciao"]
 
 
